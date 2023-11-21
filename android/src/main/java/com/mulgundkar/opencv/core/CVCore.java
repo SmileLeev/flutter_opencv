@@ -94,7 +94,7 @@ public class CVCore {
             // instantiating an empty MatOfByte class
             MatOfByte matOfByte = new MatOfByte();
             // Converting the Mat object to MatOfByte
-            Imgcodecs.imencode(".jpg", dst, matOfByte);
+            Imgcodecs.imencode(".png", dst, matOfByte);
             byteArray = matOfByte.toArray();
         } catch (Exception e) {
             System.out.println("OpenCV Error: " + e.toString());
